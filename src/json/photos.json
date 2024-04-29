@@ -1,0 +1,72 @@
+[
+  {
+    "title": "Grande Nuvem de Magalhães",
+    "font": "Alura Space",
+    "path": "/images/gallery/photo_1.png",
+    "id": "1",
+    "tagId": 2
+  },
+  {
+    "title": "Via Láctea",
+    "font": "Alura Space",
+    "path": "/images/gallery/photo_2.png",
+    "id": "2",
+    "tagId": 2
+  },
+  {
+    "title": "Lua: quarto minguante",
+    "font": "Alura Space",
+    "path": "/images/gallery/photo_3.png",
+    "id": "3",
+    "tagId": 3
+  },
+  {
+    "title": "Galáxia de Andrômeda",
+    "font": "Alura Space",
+    "path": "/images/gallery/photo_4.png",
+    "id": "4",
+    "tagId": 2
+  },
+  {
+    "title": "Estrela Pistola",
+    "font": "Alura Space",
+    "path": "/images/gallery/photo_5.png",
+    "id": "5",
+    "tagId": 1
+  },
+  {
+    "title": "Ilustração",
+    "font": "Alura Space",
+    "path": "/images/gallery/photo_6.png",
+    "id": "6",
+    "tagId": 4
+  },
+  {
+    "title": "Galáxia de Andrômeda",
+    "font": "Alura Space",
+    "path": "/images/gallery/photo_7.png",
+    "id": "7",
+    "tagId": 2
+  },
+  {
+    "title": "Ilustração",
+    "font": "Alura Space",
+    "path": "/images/gallery/photo_8.png",
+    "id": "8",
+    "tagId": 4
+  },
+  {
+    "title": "Céu estrelado",
+    "font": "Alura Space",
+    "path": "/images/gallery/photo_9.png",
+    "id": "9",
+    "tagId": 1
+  },
+  {
+    "title": "Ilustração",
+    "font": "Alura Space",
+    "path": "/images/gallery/photo_10.png",
+    "id": "10",
+    "tagId": 1
+  }
+]
