@@ -2,7 +2,7 @@ import styled from "styled-components";
 import GenericTitle from "../GenericTitle";
 import Tags from "./Tags";
 import Photos from "./Photos";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import popularPhotos from "../../json/popularPhotos.json";
 
 const GalleryContainer = styled.div`
@@ -52,19 +52,8 @@ export default function Gallery({
   // Estado local para armazenar o filtro de tags.
   const [filter, setFilter] = useState("");
 
-  // Filtra as fotos com base na tag selecionada e no texto de filtro.
-  const filteredPhotos = photos.filter((photo) => {
-    // Verifica se a tag da foto corresponde ao filtro de tags ou se não há filtro de tags.
-    const matchesTag = photo.tagId.toString() === filter || filter === "";
-
-    // Verifica se o título da foto contém o texto de filtro, ignorando maiúsculas e minúsculas, ou se não há texto de filtro.
-    const matchesSearchText =
-      photo.title.toLowerCase().includes(filterText.toLowerCase()) ||
-      filterText === "";
-
-    // Retorna verdadeiro se a foto corresponde tanto à tag quanto ao texto de filtro.
-    return matchesTag && matchesSearchText;
-  });
+  // Estado local para armazenar as fotos filtradas.
+  const [filteredPhotos, setFilteredPhotos] = useState([]);
 
   // Função para lidar com o clique em uma tag.
   const handleTagClick = (tagId) => {
@@ -73,6 +62,24 @@ export default function Gallery({
       setFilter("");
     }
   };
+
+  useEffect(() => {
+    // Filtra as fotos com base na tag selecionada e no texto de filtro.
+    const newFilteredPhotos = photos.filter((photo) => {
+      // Verifica se a tag da foto corresponde ao filtro de tags ou se não há filtro de tags.
+      const matchesTag = photo.tagId.toString() === filter || filter === "";
+
+      // Verifica se o título da foto contém o texto de filtro, ignorando maiúsculas e minúsculas, ou se não há texto de filtro.
+      const matchesSearchText =
+        photo.title.toLowerCase().includes(filterText.toLowerCase()) ||
+        filterText === "";
+
+      // Retorna verdadeiro se a foto corresponde tanto à tag quanto ao texto de filtro.
+      return matchesTag && matchesSearchText;
+    });
+
+    setFilteredPhotos(newFilteredPhotos);
+  }, [filter, filterText, photos]);
 
   return (
     <>

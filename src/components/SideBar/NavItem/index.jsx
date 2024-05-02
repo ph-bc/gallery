@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-const StyledListItem = styled.li`
+const ListItem = styled.li`
   font-size: 24px;
   line-height: 29px;
   margin-bottom: 30px;
@@ -19,9 +19,9 @@ export default function NavItem({
   active = false,
 }) {
   return (
-    <StyledListItem $active={active}>
+    <ListItem $active={active}>
       <img src={active ? activeIcon : inactiveIcon} alt="" />
       {children}
-    </StyledListItem>
+    </ListItem>
   );
 }

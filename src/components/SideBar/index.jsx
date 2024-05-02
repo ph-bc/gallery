@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import NavItem from "./NavItem";
 
-const StyledList = styled.ul`
+const List = styled.ul`
   list-style: none;
   margin: 0;
   padding: 0;
@@ -12,7 +12,7 @@ export default function SideBar() {
   return (
     <aside>
       <nav>
-        <StyledList>
+        <List>
           <NavItem
             activeIcon="/icons/active_home.png"
             inactiveIcon="/icons/inactive_home.png"
@@ -44,7 +44,7 @@ export default function SideBar() {
           >
             Surpreenda-me
           </NavItem>
-        </StyledList>
+        </List>
       </nav>
     </aside>
   );

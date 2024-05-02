@@ -29,10 +29,14 @@
 
 <h2>Deployment</h2>
 
-<p>SpaceApp can be deployed using your preferred hosting service for React apps.</p>
+<p>SpaceApp has been deployed using Vercel and can be accessed at <a href="https://spaceapp-two.vercel.app/">https://spaceapp-two.vercel.app/</a>.</p>
 
 <h2>Contributions</h2>
 
 <p>Contributions are welcome! Whether you want to report a bug, request a feature, or contribute code, please feel free to open an issue or submit a pull request.</p>
+
+<h2>Note</h2>
+
+<p>The site was designed specifically for a resolution of 1440px and is not responsive.</p>
 
 <p>Thank you for checking out SpaceApp! Happy coding!</p>
