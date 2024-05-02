@@ -29,7 +29,8 @@
 
 <h2>Deployment</h2>
 
-<p>SpaceApp has been deployed using Vercel and can be accessed at <a href="https://spaceapp-two.vercel.app/">https://spaceapp-two.vercel.app/</a>.</p>
+<p>SpaceApp has been deployed using Vercel and can be accessed at <a href="https://space-app-zeta.vercel.app/">https://space-app-zeta.vercel.app/</a>.</p>
+![Vercel](https://vercelbadge.vercel.app/api/ph-bc/gallery)
 
 <h2>Contributions</h2>
 
